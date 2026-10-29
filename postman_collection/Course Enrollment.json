@@ -1,0 +1,143 @@
+{
+  "info": {
+    "name": "Course Enrollment",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST Access Token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": "",
+            "disabled": false,
+            "type": "default"
+          }
+        ],
+        "description": "",
+        "url": {
+          "raw": "https://localhost:56982/api/auth/token",
+          "protocol": "https",
+          "host": [
+            "localhost:56982"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "token"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"course-admin\",\n  \"password\": \"ChangeMe123!\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET State",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "description": "",
+        "url": {
+          "raw": "https://localhost:56982/api/course/state",
+          "protocol": "https",
+          "host": [
+            "localhost:56982"
+          ],
+          "path": [
+            "api",
+            "course",
+            "state"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "POST Enroll",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "https://localhost:56982/api/course/enroll",
+          "protocol": "https",
+          "host": [
+            "localhost:56982"
+          ],
+          "path": [
+            "api",
+            "course",
+            "enroll"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"learnerId\": \"10000000-0000-0000-0000-000000000004\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "POST Drop",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "description": "",
+        "url": {
+          "raw": "https://localhost:56982/api/course/drop",
+          "protocol": "https",
+          "host": [
+            "localhost:56982"
+          ],
+          "path": [
+            "api",
+            "course",
+            "drop"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"learnerId\": \"10000000-0000-0000-0000-000000000004\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}
