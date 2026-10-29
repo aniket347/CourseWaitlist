@@ -2,7 +2,7 @@
 
 ## Prompt used
 
-“Create a .NET 10 solution with proper repository pattern but repository shouldn't connect to DB instead it should use in-memory data as per the document. Make sure proper models are used and pre-requisite will be a score of more than 80 for each of the learner which will be stored in memory. Add proper authorization filter with one endpoint to generate token.” with the given pdf
+“Create a .NET 10 solution with proper repository pattern but repository shouldn't connect to DB instead it should use in-memory data as per the document. Make sure proper models are used and pre-requisite will be a score of more than 80 for each of the learner which will be stored in memory. Add proper authorization filter with one endpoint to generate token.” (with the given pdf as attachment)
 
 
 
